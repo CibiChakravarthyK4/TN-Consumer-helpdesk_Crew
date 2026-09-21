@@ -1,25 +1,39 @@
-Markdown
-# 🏛️ Namma Support Crew: Tamil Nadu Consumer Helpdesk
+# 🚀 Namma Support Crew: Tamil Nadu Consumer Helpdesk
 
-> A Multi-Agent AI Customer Support System built for Tamil Nadu public utilities and citizen services, powered by CrewAI, local Text RAG, live web search, and a high-end Streamlit UI.
+Excited to share my latest GenAI project — **Namma Support Crew**, a multi-agent AI customer support application built using CrewAI, Python, Streamlit, and OpenAI.
 
-## 🚀 Overview
-**Namma Support Crew** bridges the gap between citizens and public utility information. Juggling multiple platforms for services like TNEB (Electricity), transport, and consumer grievances can be tedious. This system deploys an automated multi-agent workflow that acts as a specialized digital helpdesk, fetching verifiable answers from local documentation and the live web while ensuring security and compliance logging.
+The project is designed to support Tamil Nadu consumer queries by combining local RAG-based knowledge retrieval with live web search to provide relevant and up-to-date information.
 
-## 🛠️ Architecture & Multi-Agent Workflow
-The application uses a **Sequential Process** via CrewAI, coordinating three distinct specialized agents:
+## 🛠️ Technology Stack
+* **Python** – Core programming language
+* **CrewAI** – Multi-agent orchestration and sequential workflow
+* **Streamlit** – Interactive UI with custom HTML/CSS and branding
+* **OpenAI** – LLM-powered agent reasoning
 
-1. **Direct Support Specialist (Agent 1):** Analyzes the incoming query and delivers primary advisory support using domain knowledge.
-2. **Web & Document Search Specialist (Agent 2):** Queries local text reference files (`tn_consumer_guide.txt`) and live web sources using custom tools to retrieve up-to-date guidelines.
-3. **Entry & Records Archivist (Agent 3):** Compiles the final response structure and automatically logs all interaction data locally into `answers.txt`.
+## 🔧 Tools Implemented
+* **TXTSearchTool** – Retrieves information from the local `tn_consumer_guide.txt` knowledge base.
+* **SerperDevTool** – Performs live web searches when additional or updated information is required.
+* **Custom `@tool`** – Formats and enriches incoming consumer queries before processing.
 
-## 🧰 Tech Stack & Tools
-* **Core Language:** Python
-* **Orchestration:** [CrewAI](https://www.crewai.com/)
-* **Interface:** [Streamlit](https://streamlit.io/) (featuring custom Google Fonts 'Poppins', custom styling, and Tamil Nadu emblem branding)
-* **LLM Provider:** OpenAI
-* **Search Tools:** `SerperDevTool` (Live Web Search), `TXTSearchTool` (Local RAG)
-* **Custom Code Utilities:** Custom `@tool` decorator for query formatting and metadata tagging.
+## 🤖 Multi-Agent Workflow
+The application follows a sequential CrewAI workflow with three specialized agents:
+
+1. **Direct Support Specialist**  
+   Analyzes the consumer query and provides an initial response using the available public-service knowledge.
+2. **Web & Document Search Specialist**  
+   Searches both the local knowledge base and live web sources to retrieve relevant information and supporting references.
+3. **Entry & Records Archivist**  
+   Combines the agent outputs, structures the final response, and maintains a local record of queries and responses.
+
+## 💡 Key Learning
+Building this project gave me valuable hands-on experience in Multi-Agent AI, RAG, tool integration, web search, prompt orchestration, and GenAI application development.
+
+## ⚙️ Quick Start
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/CibiChakravarthyK4/TN-Consumer-helpdesk_Crew.git](https://github.com/CibiChakravarthyK4/TN-Consumer-helpdesk_Crew.git)
+   cd TN-Consumer-helpdesk_Crew
 
 
 ## 📁 Project Structure
@@ -36,9 +50,7 @@ TN-Consumer-helpdesk_Crew/
 ⚙️ Installation & Setup
 Clone the Repository:
 
-Bash
-git clone [https://github.com/CibiChakravarthyK4/TN-Consumer-helpdesk_Crew.git](https://github.com/CibiChakravarthyK4/TN-Consumer-helpdesk_Crew.git)
-cd TN-Consumer-helpdesk_Crew
+
 Install Dependencies:
 
 Bash
